@@ -1,2 +1,421 @@
-/* Coloque o CSS neste arquivo */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+}
+
+body header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+body header .line1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10%;
+    margin: 24px 0;
+    background-color: #fff;
+}
+
+body header .line1 input {
+    font-size: 16px;
+    color: #7f7f7f;
+    width: 198px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-left: 8px;
+    background-image: url("../images/lupa.png");
+    background-repeat: no-repeat;
+    background-position: 160px;
+}
+
+body header .line1 .account{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+body header .line1 .account .minicart {
+    margin-left: 18px;
+    position: relative;
+}
+
+body header .line1 .account .minicart .count {
+    color: #fff;
+    background-color: #ffa200;
+    font-size: 10px;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+body header nav {
+    background-color: #8158c5;
+    height: 50px;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body header nav a {
+    color: #fff;
+    transition: color 0.4s;
+}
+
+body header nav a:hover{
+    color: #ffa200;
+}
+
+body .content .banner-box {
+    margin-top: 166px;
+    position: relative;
+}
+
+body .content .banner-box .slick-arrow {
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    z-index: 99;
+    cursor: pointer;
+}
+
+body .content .banner-box .slick-prev {
+    background-image: url("../images/seta1.png");
+    height: 81px;
+    width: 43px;
+    top: 100px;
+    left: 200px;
+}
+
+body .content .banner-box .slick-next {
+    background-image: url("../images/seta2.png");
+    height: 81px;
+    width: 43px;
+    top: 100px;
+    right: 200px;
+}
+
+body .content .pics {
+    background-color: #ffa200;
+    height: 136px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body .content .shelf {
+    margin-bottom: 42px;
+}
+
+body .content .shelf h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 32px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+body .content .shelf .products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body .content .shelf .products a {
+    text-align: center;
+    color: #7f7f7f;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+body .content .shelf .products a figure {
+    position: relative;
+}
+
+body .content .shelf .products a figure figcaption {
+    background-color: #8158c5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 73px;
+    height: 24px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body .content .shelf .products a figure img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+body .content .shelf .products a figure .buy {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+body .content .shelf .products a figure:hover img {
+    opacity: 0.3;
+}
+
+body .content .shelf .products a figure:hover .buy {
+    opacity: 1;
+}
+
+body .content .shelf .products a figure .buy {
+    color: #fff;
+    font-size: 16px;
+}
+
+body .content .shelf .products a figure .buy button {
+    background-color: #ffa200;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    width: 144px;
+    height: 42px;
+    cursor: pointer;
+}
+
+body .content .banners-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 32px;
+    margin-top: 64px;
+}
+
+body .content .banners-middle img {
+    cursor: pointer;
+}
+
+body .content .bar-benefits {
+    background-color: #8158c5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px 0;
+    border-bottom: 2px solid #ffa200;
+}
+
+body .content .bar-benefits .benefit {
+    display: flex;
+}
+
+body .content .bar-benefits .benefit p {
+    color: #fff;
+    margin-left: 18px;
+    margin-top: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+}
+
+body .content .newsletter {
+    background-color: #8158c5;
+    padding: 48px 10%;
+    text-align: center;
+    color: #fff;
+}
+
+body .content .newsletter h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+body .content .newsletter .form {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .content .newsletter .form input {
+    background-color: transparent;
+    color: #fff;
+    border: unset;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 8px;
+}
+
+body .content .newsletter .form input.name {
+    margin-right: 24px;
+    width: 180px;
+}
+
+body .content .newsletter .form input.email {
+    margin-right: 24px;
+    width: 279px;
+}
+
+body .content .newsletter .form input::placeholder{
+    color: #fff;
+    font-weight: 300;
+}
+
+body .content .newsletter .form button {
+    background-color: #ffa200;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    width: 144px;
+    height: 42px;
+    cursor: pointer;
+}
+
+body footer .footer1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+body footer .footer1 .col1 {
+    min-width: 300px;
+    margin-right: 80px;
+}
+
+body footer .footer1 .col1 img {
+    margin-bottom: 24px;
+}
+
+body footer .footer1 .col1 .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body footer .footer1 .col1 .social-icons .icon {
+    width: 30px;
+    height: 30px;
+    background-color: #7f7f7f;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 18px;
+    transition: background-color 0.4s;
+    margin-bottom: 18px;
+}
+
+body footer .footer1 .col1 .social-icons .icon:hover{
+    background-color: #ffa200;
+}
+
+body footer .footer1 .col1 .social-icons .icon.facebook{
+    background-image: url("../images/facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body footer .footer1 .col1 .social-icons .icon.instagram{
+    background-image: url("../images/instagram.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body footer .footer1 .col1 .social-icons .icon.twitter{
+    background-image: url("../images/twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body footer .footer1 .col1 .address p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+body footer .footer1 .col-2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    min-width: 150px;
+}
+
+body footer .footer1 p {
+    font-size: 14px;
+    color: #8158c5;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+body footer .footer1 a {
+    font-size: 14px;
+    color: #7f7f7f;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+body footer .footer1 .col-3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    min-width: 150px;
+    margin-top: -18px;
+}
+
+body footer .footer1 .col-4 p {
+    margin-top: -16px;
+    margin-bottom: 18px;
+}
+
+body footer .footer1 .col-4 .payment {
+    max-width: 200px;
+}
+
+body footer .footer2 {
+    display: flex;
+    justify-content: center;
+    padding: 24px 10% 0;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    border-top: 2px solid #f0f0f0;
+    font-size: 12px;
+    color: #7f7f7f;
+}
+
+body footer .footer2 p{
+    margin-right: 24px;
+    text-transform: uppercase;
+}
 

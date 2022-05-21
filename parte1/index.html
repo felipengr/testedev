@@ -1,18 +1,287 @@
 <!doctype html>
 <html lang="pt-BR">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Pet Store</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="">
-	<link rel="stylesheet" href="css/styles.css">
-	<script src="js/script.js" type="text/javascript"></script>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Pet Store</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="">
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	</head>
 
-<body>
+	<body>
+		<header>
+			<div class="line1">
+				<input type="text" placeholder="Pesquisar..." />
+				<img src="./images/logo.png" alt="Logo PETStore">
+				<div class="account">
+					<div class="login">
+						<img src="./images/login.png" alt="Login">
+					</div>
+					<div class="minicart">
+						<img src="./images/carrinho.png" alt="Carrinho">
+						<div class="count">0</div>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<a href="">Categoria lorem</a>
+				<a href="">Categoria lorem</a>
+				<a href="">Categoria lorem</a>
+				<a href="">Categoria lorem</a>
+				<a href="">Categoria lorem</a>
+				<a href="">Categoria lorem</a>
+				<a href=""><img src="./images/ver-mais.png" alt="Ver mais"></a>
+			</nav>
+		</header>
+		<div class="content">
+			<div class="banner-box">
+				<img src="./images/banner-full.png" alt="Banner">
+				<img src="./images/banner-full.png" alt="Banner">
+				<img src="./images/banner-full.png" alt="Banner">
+				<img src="./images/banner-full.png" alt="Banner">
+			</div>
+			<nav class="pics">
+				<a href=""><img src="./images/racoes.png" alt="Rações"></a>
+				<a href=""><img src="./images/brinquedos.png" alt="Brinquedos"></a>
+				<a href=""><img src="./images/acessorios.png" alt="Acessórios"></a>
+			</nav>
+			<div class="shelf">
+				<h3>Novidades</h3>
+				<div class="products">
+					<a href="">
+						<figure>
+							<img src="./images/produto1.png" alt="">
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto2.png" alt="">
+							<figcaption class="flag">50% off</figcaption>
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto3.png" alt="">
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto4.png" alt="">
+							<figcaption class="flag">Novo</figcaption>
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+				</div>
+			</div>
+			<div class="banners-middle">
+				<img src="./images/gatos.png" alt="Para Gatos">
+				<img src="./images/cachorros.png" alt="Para Cachorros">
+			</div>
+
+			<div class="shelf">
+				<h3>Destaques</h3>
+				<div class="products">
+					<a href="">
+						<figure>
+							<img src="./images/produto1.png" alt="">
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto2.png" alt="">
+							<figcaption class="flag">50% off</figcaption>
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto3.png" alt="">
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto4.png" alt="">
+							<figcaption class="flag">Novo</figcaption>
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="shelf">
+				<div class="products">
+					<a href="">
+						<figure>
+							<img src="./images/produto1.png" alt="">
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto2.png" alt="">
+							<figcaption class="flag">50% off</figcaption>
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto3.png" alt="">
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+
+					<a href="">
+						<figure>
+							<img src="./images/produto4.png" alt="">
+							<figcaption class="flag">Novo</figcaption>
+							<div class="buy">
+								<button>Compra rápida</button>
+							</div>
+						</figure>
+						<p class="name">Lorem ipsum dolor</p>
+						<p class="price">R$ 99,99</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="bar-benefits">
+				<div class="benefit">
+					<img src="./images/icone-logo.png" alt="Ícone">
+					<p><strong>Entrega gratuita</strong> a partir de R$99</p>
+				</div>
+				<div class="benefit">
+					<img src="./images/icone-logo.png" alt="Ícone">
+					<p><strong>Parcelamento</strong> sem juros</p>
+				</div>
+				<div class="benefit">
+					<img src="./images/icone-logo.png" alt="Ícone">
+					<p><strong>Cadastre-se</strong> e ganhe desconto</p>
+				</div>
+			</div>
+
+			<div class="newsletter">
+				<h2>Assine nossa newsletter</h2>
+				<p>Cadastra-se para receber nossas novidades e descontos exclusivos!</p>
+				<div class="form">
+					<input class="name" type="text" placeholder="Nome">
+					<input class="email" type="email" placeholder="E-mail">
+					<button type="submit">Enviar</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<section class="footer1">
+				<div class="col1">
+					<img src="./images/logo.png" alt="Logo">
+					<div class="social-icons">
+						<div class="icon facebook"></div>
+						<div class="icon instagram"></div>
+						<div class="icon twitter"></div>
+					</div>
+					<div class="address">
+						<p>© 2019  •  CNPJ 00.000.000/0000-00</p>
+						<p>Rua Tal de Tal, 123 - Cidade</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<p>Pet Store</p>
+					<a href="">Quem Somos</a>
+					<a href="">Como Comprar</a>
+					<a href="">Trocas e Devoluções</a>
+					<a href="">Frete e Entregas</a>
+				</div>
+				<div class="col-3">
+					<p>Contato</p>
+					<a href="tel:+559999999999">(99) 9999-9999</a>
+					<a href="tel:+559999999999">(99) 9999-9999</a>
+					<a href="mailto:petstore@petstore.com.br">petstore@petstore.com.br</a>
+				</div>
+				<div class="col-4">
+					<p>Pagamento</p>
+					<div class="payment">
+						<img src="./images/visa.png" alt="Visa">
+						<img src="./images/mastercard.png" alt="MasterCard">
+						<img src="./images/american.png" alt="American">
+						<img src="./images/dinersclub.png" alt="Diners Club">
+						<img src="./images/hipercard.png" alt="Hipercard">
+						<img src="./images/aura.png" alt="Aura">
+						<img src="./images/elo.png" alt="Elo">
+						<img src="./images/boleto.png" alt="Boleto">
+					</div>
+				</div>
+			</section>
+			<section class="footer2">
+				<p>Tecnologia e desenvolvimento</p>
+				<img src="./images/serie.png" alt="Seri.e Design">
+			</section>
+		</footer>
+	</body>
+
+	<script src="js/script.js" type="text/javascript"></script>
+</html>
 
 
 
