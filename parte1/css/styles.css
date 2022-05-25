@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-body header {
+body header.header-desk {
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,11 @@ body header {
     z-index: 9999;
 }
 
-body header .line1 {
+body header.header-mobile {
+    display: none;
+}
+
+body header.header-desk .line1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +36,7 @@ body header .line1 {
     background-color: #fff;
 }
 
-body header .line1 input {
+body header.header-desk .line1 input {
     font-size: 16px;
     color: #7f7f7f;
     width: 198px;
@@ -45,18 +49,18 @@ body header .line1 input {
     background-position: 160px;
 }
 
-body header .line1 .account{
+body header.header-desk .line1 .account{
     display: flex;
     justify-items: center;
     justify-content: space-around;
 }
 
-body header .line1 .account .minicart {
+body header.header-desk .line1 .account .minicart {
     margin-left: 18px;
     position: relative;
 }
 
-body header .line1 .account .minicart .count {
+body header.header-desk .line1 .account .minicart .count {
     color: #fff;
     background-color: #ffa200;
     font-size: 10px;
@@ -69,7 +73,7 @@ body header .line1 .account .minicart .count {
     right: -3px;
 }
 
-body header nav {
+body header.header-desk nav {
     background-color: #8158c5;
     height: 50px;
     width: 100%;
@@ -79,18 +83,22 @@ body header nav {
     justify-content: space-between;
 }
 
-body header nav a {
+body header.header-desk nav a {
     color: #fff;
     transition: color 0.4s;
 }
 
-body header nav a:hover{
+body header.header-desk nav a:hover{
     color: #ffa200;
 }
 
 body .content .banner-box {
     margin-top: 166px;
     position: relative;
+}
+
+body .content .banner-box-mobile {
+    display: none;
 }
 
 body .content .banner-box .slick-arrow {
@@ -419,3 +427,196 @@ body footer .footer2 p{
     text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+
+    header.header-desk {
+        display: none !important;
+    }
+
+    header.header-mobile {
+        display: flex !important;
+        flex-direction: column;
+        padding: 0 5%;
+        background-color: #fff;
+        width: 100%;
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+        box-shadow: 0px 2px 2px 0px rgba(204,204,204,1);
+        padding-top: 16px;
+    }
+
+    header.header-mobile .line1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header.header-mobile .line1 .menu-content {
+        display: flex;
+    }
+
+    header.header-mobile .line1 .menu {
+        max-width: 32px;
+    }
+
+    header.header-mobile .line1 .menu img {
+        max-width: 32px;
+    }
+
+    header.header-mobile .line1 .logo img {
+        max-width: 126px;
+    }
+
+    header.header-mobile .line1 .account img {
+        max-width: 32px;
+        margin: 0 8px;
+    }
+
+    header.header-mobile .search {
+        width: 100%;
+        margin: 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header.header-mobile .search input {
+        font-size: 16px;
+        color: #7f7f7f;
+        width: 100%;
+        height: 45px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding-left: 8px;
+        background-image: url("../images/lupa.png");
+        background-repeat: no-repeat;
+        background-position: 98%;
+    }
+
+    .content .banner-box {
+        display: none;
+    }
+
+    .content .banner-box-mobile {
+        display: flex !important;
+    }
+
+    body .content .slick-arrow {
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    z-index: 99;
+    cursor: pointer;
+    }
+
+    body .content .slick-prev {
+        background-image: url("../images/seta1.png");
+        height: 81px;
+        width: 20px;
+        top: 74px;
+        left: 18px;
+    }
+
+    body .content .slick-next {
+        background-image: url("../images/seta1.png");
+        transform: rotate(180deg);
+        height: 81px;
+        width: 20px;
+        top: 74px;
+        right: 18px;
+    }
+
+    body .content .pics img {
+        max-width: 90%;
+    }
+
+    body .content .pics .slick-list {
+        margin-left: 5%;
+    }
+
+    body .content .shelf .products figure {
+        width: 90%;
+    }
+
+    body .content .shelf .products .slick-list {
+        margin-left: 5%;
+    }
+
+    body .content .shelf .slick-arrow {
+        top: 136px;
+    }
+
+    body .content .banners-middle {
+        flex-direction: column;
+    }
+
+    body .content .banners-middle img {
+        max-width: 350px;
+    }
+
+    body .content .bar-benefits .slick-list {
+        margin-left: 5%;
+    }
+
+    body .content .bar-benefits .benefit {
+        width: 90%;
+    }
+
+    body .content .form {
+        flex-direction: column;
+    }
+
+    body .content .newsletter .form input.name {
+        margin-right: 0;
+        width: 279px;
+    }
+
+    body .content .newsletter .form input.email {
+        margin-right: 0;
+        margin-top: 24px;
+    }
+
+    body .content .newsletter .form button {
+        margin-right: 0;
+        width: 279px;
+        margin-top: 24px;
+    }
+
+    footer {
+        padding: 0 5%;
+    }
+
+    footer .footer1 {
+        flex-direction: column;
+    }
+
+    body footer .footer1 .col1 {
+        min-width: none;
+        margin: 0;
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    body footer .footer1 .col-2 {
+        margin-right: 0;
+        max-width: none;
+        margin-top: 18px;
+        text-align: center;
+    }
+
+    body footer .footer1 .col-3 {
+        margin-right: 0;
+        max-width: none;
+        margin-top: 18px;
+        text-align: center;
+    }
+
+    body footer .footer1 .col-4 {
+        margin-right: 0;
+        max-width: none;
+        margin-top: 18px;
+        text-align: center;
+    }
+}
